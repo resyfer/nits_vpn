@@ -16,7 +16,7 @@ Login to the [AWS Console](http://console.aws.amazon.com).
 
 Set your location as shown to a place where you want your VPN server to be (I'm selecting `Mumbai`):
 
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/7ca79558-d981-4887-8d84-1daebab878f2)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/39bf5625-f377-47be-a973-4e4eae3864f4)
 ![image](https://github.com/resyfer/nits_vpn/assets/74897008/5d01b634-fa7a-4398-b476-f8356a34db6b)
 
 **NOTE**: Once server is created you **CAN NOT** change the location of the server. You can delete the server and start a new one in another location though.
@@ -228,19 +228,17 @@ f3c0075999a5a9fd45b47f5440a59bef
 These instructions are supposed to be performed on **your own** machine.
 
 ### Windows
-Download `OpenVPN Connect` from the [OpenVPN Downloads page](https://openvpn.net/client/client-connect-vpn-for-windows/) and install it and open it. Then add a proxy as shown (enter your LAN proxy, mine is `172.16.2.11` with port `3128`) and save:
+Download `OpenVPN Connect` from the [OpenVPN Downloads page](https://openvpn.net/client/client-connect-vpn-for-windows/) and install it and open it. Then add a proxy (+ button) as shown (enter your LAN proxy, mine is `172.16.2.11` with port `3128`) and save:
 
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/1d86707d-56c8-484c-ac3f-e42db6390ed4)
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/61a2c291-033b-420a-8eb1-e7733c570615)
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/1280f2ee-806e-4564-8c59-2c90d45541f9)
-
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/92478bf4-8218-431a-8f33-e037ffcda945)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/1660e4c0-3796-46ee-8e4a-2fd639a15e28)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/f3ab7c41-882a-47b1-b31d-8bce7a2025bc)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/fe604732-17f7-4695-8876-a247edb6245e)
 
 Go back to `Profiles` -> + button -> `Upload file` -> Upload the `<your client name>.ovpn` file -> Give it a preferred name -> `Connect`.
 
 Stop the connection in mid-way (click the switch). It can't connect yet as proxy is not configured. Click the pen icon beside it (Edit) -> Under `Proxy` select your proxy -> Save (top right) -> then connect by clicking the switch:
 
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/7ed616f5-354f-463e-acf8-9262d0b34555)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/f4f602fd-5d93-4a88-92a5-9b2138160c52)
 
 The speed current speed will be as fast as your LAN's speed. It doesn't slow it down. The ping that gets added to you for the VPN is `your old ping + ping proportional to distance between you and openvpn server`.
 
