@@ -1,4 +1,4 @@
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/7c3993d4-d4ee-4da6-a03d-20d2e844f137)![image](https://github.com/resyfer/nits_vpn/assets/74897008/e9b2ed2f-d435-4ac1-9368-9764a02a9fa5)# NITS_VPN
+# NITS_VPN
 
 Unlocking your NITS LAN in 20   minutes.
 
