@@ -17,61 +17,65 @@ Login to the [AWS Console](http://console.aws.amazon.com).
 Set your location as shown to a place where you want your VPN server to be (I'm selecting `Mumbai`):
 
 ![image](https://github.com/resyfer/nits_vpn/assets/74897008/7ca79558-d981-4887-8d84-1daebab878f2)
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/21be118e-5318-47f0-82f7-70199ab62fb7)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/5d01b634-fa7a-4398-b476-f8356a34db6b)
 
 **NOTE**: Once server is created you **CAN NOT** change the location of the server. You can delete the server and start a new one in another location though.
 
 Then search `EC2` -> `Instances` -> `Launch instances`:
 
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/68d94c53-c694-44be-a9fb-bed786a17763)
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/51b4563c-a8da-490a-b1a3-03cb26c9356e)
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/a5c7025e-1fb6-40c0-9a09-6c24e2e8fe38)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/525dadfb-830c-445b-bd04-00c36dcd5360)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/d0d90d83-5926-471a-9ab1-98947d4f1eb3)
 
 Enter any name you want for the server, select `Ubuntu` for the operating system. Then go to `Key Pair` down below and `Create new key pair` (you can use an existing one if you have it). Give the key pair a name and `Create key pair`. Download the key-pair file when popup for download shows up (automatically)
 
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/1192d095-19bd-42a9-9ecd-7451c42bfc8c)
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/96e88bc4-8279-4bed-a9f8-485a6f72def7)
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/83e4ac64-1ab6-4964-ac0c-2983f6b09bf4)
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/e9002910-c94a-491e-8acd-e89f438ef479)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/97bc6ee2-9c7f-4dee-b4fd-1caa8aed948a)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/2f96f6a0-97c9-4241-b154-a018f39383bb)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/9e95d293-72a3-4c4c-ab27-f1f2a1c05216)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/aa13d7b4-0c19-4732-bfef-c42967a4f1a9)
 
 Wait till the `Instance check` and `Status check` of your server says `Running` and `2/2 checks passed` respectively. You can use the reload button to reload the information. Then select the server.
 
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/9a1b3bc3-18f9-4807-beb5-e059d844a8a8)
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/9dd33196-a4df-4d71-9d10-c781f9b40d44)
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/4d077d70-a60e-43c3-a012-87b362f48647)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/c76b4b0a-2af7-45b5-9e46-190e5bf16885)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/ddfb7669-25bd-4465-af9a-41e5803597ef)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/4c8fa961-8f56-41ce-9e5a-a1f46c20f8e1)
+
 
 ### Allowing VPN Internet Traffic
 
 Ensuring your `EC2` instance is selected as shown above, check your EC2 instance's Security Group, select it and add the inbound traffic rules as shown below:
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/e5a8c993-35e7-49d0-a083-6cfb55e1a791)
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/36b6e687-b947-45c3-8ac9-f31b1611dbbb)
 
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/958d6216-dd0a-4597-9856-f25b5dcacb43)
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/7a401757-1b06-4b33-a0d5-197595f6d3e2)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/c1755380-cdb9-42c9-a919-474c1b608eb3)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/01ee215d-3774-4e2e-9585-a4a7e502be81)
 
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/972de7be-6db3-428a-a55a-031f36ed47ce)
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/d3dedbd5-8449-489f-bfb1-b186957a9db1)
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/97f8852d-3de4-43ce-a0a6-89e2a5eabdb5)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/37de5f36-bc52-4f72-9900-11a870bf9460)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/a48000f1-8cf5-4774-8a7b-210d2b21687c)
+
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/58ede890-cfba-4106-9550-e53794c3b740)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/545936c0-b4ec-40a3-825c-db1ec69fff92)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/09ffbfa2-24f5-4594-9481-97a34a4163f3)
+
 
 **NOTE**: I've kept the public IPv4 address visible to keep it beginner friendly, and I will delete the server immediately after writing this, so no point in you trying to use my servers 😄
 
 Add the various rules as shown and click `Save rules`:
 
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/ad7fd820-52de-4f80-b869-4cce51621c08)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/ebc42ef4-1c09-49ce-9c0a-f9e96ed819ff)
 
 Go back to `Instances`, select your instance and click `Connect`. Then `EC2 Instance Connect` -> `Connect`:
 
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/e2819ec1-3e6e-4ffa-a113-3869722426b6)
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/5f8f9a8e-e034-4689-80af-9b15a989988d)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/5fc059c6-ae06-44a1-8773-a7b630db8d67)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/2cd0a14b-cfb4-4dd8-88bf-41900c616aae)
 
 **NOTE**: If you face any error connecting to your instance, current cloud core members of GDSC NIT Silchar will be more than willing to help you connect using `AWS CloudShell` and `SSH`, but only provided you have your `Key Pair` safe with you.
 
 ### Setting Up OpenVPN Server
 When you successfully connect to your `EC2` instance, you will see something like this:
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/9a246f02-d9d7-4ed5-8b92-aa1f5f6a1a8c)
+
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/0eeade33-e32c-4305-8176-e53009f84043)
 
 This is your public `IPv4 address`:
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/be597edd-2731-4a99-95c1-2e68889cd6b2)
+
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/ec0d88cd-a2f8-4b9f-a305-d2feb2aa019a)
 
 You have to enter these commands (one by one please):
 ```sh
@@ -82,7 +86,7 @@ $ sudo bash openvpn-install.sh
 
 Then enter your public `IPv4` address found above when prompted:
 
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/6855f20a-aa26-4d26-8e3b-9c82bfb5ba6e)
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/8040104f-c5be-4db4-81b3-aa82787708c8)
 
 Answers to the various prompts:
 ```
@@ -116,7 +120,8 @@ Customize encryption settings? [y/n]: n
 ```
 
 Press `Enter`. Again press `Enter` when a screen similar to this shows up:
-![image](https://github.com/resyfer/nits_vpn/assets/74897008/e13b9641-6335-4828-9665-4acaee850213)
+
+![image](https://github.com/resyfer/nits_vpn/assets/74897008/ddf6dd68-88d1-4162-b741-64d7e6f6c258)
 
 Then enter a client name (anything you want) as well as the other options:
 ```
